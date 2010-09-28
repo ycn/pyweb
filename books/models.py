@@ -13,6 +13,9 @@ class Publisher(models.Model):
 	def __unicode__(self):
 		return self.name
 
+	class Meta:
+		ordering = ['name']
+
 class Author(models.Model):
 	first_name = models.CharField(max_length=30)
 	last_name = models.CharField(max_length=40)
