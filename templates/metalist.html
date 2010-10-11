@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Current Datetime</title>
+</head>
+<body>
+{% include 'tips.html' %}
+<table>
+	<tr><th>Meta Key</th><th>Value</th></tr>
+{% for k,v in request_meta %}
+	<tr><td>{{ k }}</td><td>{{ v }}</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>
+
